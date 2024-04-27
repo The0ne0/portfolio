@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&display=swap');
 
 *{
+    scroll-behavior: smooth;
     margin: 0;
     font-family: "Inter", sans-serif;
 }
@@ -108,8 +109,7 @@ min-height: 70vh;
     font-size: 80px;
     font-weight: 700;
     text-shadow:5px 5px 0 black;
-
-
+    text-align: center;
 }
 
 .about-block{
@@ -148,4 +148,143 @@ min-height: 70vh;
     border-radius: 20px;
     color: black;
     text-decoration:none;
+}
+
+.skills-block{
+    display: flex;
+    background-image: url(img/form3.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 10px 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 450px;
+    height: 300px;
+    /* border:10px solid ; */
+    background-position: center;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comments-block{
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.comment-card{
+    background-image: url("img/card.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.comment-card img{
+    height:150px ;
+}
+
+.comment-card h1{
+    font-family: comfortaa;
+}
+
+.comment-card p{
+    font-family: comfortaa;
+    padding: 10px;
+}
+
+.comment-buble{
+    background-image: url("img/comment.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 330px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.comment-buble p{
+    font-family: comfortaa;
+    font-size: 20px;
+}
+
+ 
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.footer{
+    color: aqua;
+    background-color: rgb(0, 62, 74);
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-text{
+    font-family: comfortaa;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo{
+    background-image: url("img/Silicon-1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #bbff2c;
+    height:100px;
+    width: 50px;
+    font-size: 80px;
+    padding-left: 50px ;
+    flex-shrink: 0;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-right: 30%;
+    cursor: pointer;
+}
+
+.menu-link{
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px 17px;
+    text-decoration: none;
+    font-family: comfortaa;
+    background-color: #fff;
+    color: black;
+}
+
+.active {
+    background-color: black;
+    color: white;
 }
