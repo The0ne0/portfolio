@@ -1,8 +1,9 @@
-const manu = document.querySelector (".menu")
+const menu = document.querySelector (".menu")
+const menu_link = document.querySelector (".menu-link")
+
 
 function change_active (event){
     console.log(event.target)
-
 }
 
 const swiper = new Swiper('.swiper', {
@@ -12,3 +13,5 @@ const swiper = new Swiper('.swiper', {
     depth:100,
 
 });
+
+menu.onclick = change_active
