@@ -124,7 +124,7 @@ min-height: 70vh;
     min-height: 300px;
     min-width: 200px;
     background-size: cover;
-    padding: 30px 0px 0px 100px;
+    padding: 50px 0px 0px 0px;
     /* flex-direction: column; */
     /* align-items: center; */
     position: relative;
@@ -140,9 +140,8 @@ min-height: 70vh;
     min-width: 100px;
     max-width: 400px;
 }
-.stuf-i-know-how-to-do-button-section{
+.button-section{
     display: block;
-    margin: 100% 0px 0px 5px;
     padding: 10px;
     background-color: rgb(81, 255, 0);
     border-radius: 20px;
@@ -251,6 +250,7 @@ min-height: 70vh;
     justify-content: space-between;
     position: fixed;
     z-index: 100;
+    width: 100%;
 }
 
 .logo{
@@ -270,7 +270,7 @@ min-height: 70vh;
     display: flex;
     align-items: center;
     gap: 32px;
-    padding-right: 30%;
+    padding-right: 15%;
     cursor: pointer;
 }
 
@@ -282,6 +282,8 @@ min-height: 70vh;
     font-family: comfortaa;
     background-color: #fff;
     color: black;
+    width: 100px;
+    text-align: center;
 }
 
 .active {
@@ -289,3 +291,87 @@ min-height: 70vh;
     color: white;
 }
 
+.menu-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile_menu{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #200153;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    z-index: -1;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width:800px ) {
+    .menu{
+        display: none;
+    }
+
+    .logo{
+        width: 20px;
+        height: 50px;
+    }
+    .moving-planet{  
+        display: none;
+    }
+    .main-block-button{
+        transition: none;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .about-block{
+        flex-direction: column-reverse;
+    }
+    .comments-block{
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    .comment-buble{
+        background-image: url(img/comment-mobile.png);
+    }
+    .comment-card{
+        width: 140px;
+    }
+    .comment-card img{
+        height:100px;
+    }
+    .footer{
+        align-items: center;
+        flex-direction: column;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+/* @media (max-width:520px) {
+    *{  
+    background-color: purple;
+    }   
+}
+@media (min-width:521px) and (max-width:960px) {
+    *{  
+    background-color: #00ff00;
+    }   
+}
+
+@media (min-width:961px){
+    *{  
+    background-color: #000000;
+    } 
+} */

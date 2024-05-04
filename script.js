@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-menu.onclick = change_active
+// menu.onclick = change_active
 
 window.onscroll = () => {
     const h =document.documentElement.clientHeight;
@@ -43,3 +43,5 @@ window.onscroll = () => {
     prev_activ.classList.remove("active");
     new_active.classList.add("active");
 };
+
+const menu_btn = menu.querySelector(".menu-button")
