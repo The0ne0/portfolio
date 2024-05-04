@@ -44,4 +44,10 @@ window.onscroll = () => {
     new_active.classList.add("active");
 };
 
-const menu_btn = menu.querySelector(".menu-button")
+const menu_btn = document.querySelector(".menu-button")
+const mobile_menu = document.querySelector(".mobile_menu")
+
+menu_btn.onclick = () => {
+    mobile_menu.classList.toggle("hide");
+    console.log("hi")
+};
