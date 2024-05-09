@@ -165,6 +165,14 @@ min-height: 70vh;
     background-position: center;
 }
 
+.about-block-button{
+    margin-top: 50px;
+}
+
+.center{
+    text-align: center;
+}
+
 #skills{
     display: flex;
     flex-direction: column;
@@ -182,7 +190,7 @@ min-height: 70vh;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    max-width: 200px;
+    width: 200px;
     height: 300px;
     display: flex;
     flex-direction: column;
